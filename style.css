@@ -1,0 +1,220 @@
+/* Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #fff;
+  font-size: 36px;
+}
+
+h3 {
+    color: #fff;
+    padding-top: 40px;
+
+}
+
+h4 {
+    color: #fff;
+}
+
+/* Navbar CSS */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 0 0 10px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ddd;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.content {
+  padding-top: 60px; /* Adjust this value based on the height of your navbar */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 999;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+/* Hero Section CSS */
+.hero {
+  background-color: #333;
+  color: #fff;
+  font-size: 45px;
+  height: 100vh;
+  width: 100%;
+  padding-top: 60vw;
+  padding-left: 5vw;
+}
+
+#myName {
+  animation: color-change 7s infinite;
+}
+
+@keyframes color-change {
+  50% {
+    color: #333;
+  }
+}
+
+/* About Me Section CSS */
+.about-me {
+  background-color: #333;
+  width: 100%;
+  padding: 100px 10px 90px;
+}
+
+.about-me p {
+  color: #fff;
+  text-align: center;
+  font-size: 21px;
+  line-height: 36px;
+  padding-top: 40px;
+}
+
+/* Projects Section CSS */
+.my-projects {
+  background-color: #333;
+  height: auto;
+  width: 100%;
+  padding: 100px 10px 90px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    padding-top: 30px;
+}
+
+.projImg {
+    width: 80vw;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.custom-1 {
+    font-size: 12px;
+}
+
+.custom-2 {
+    font-size: 10px;
+}
+
+.my-projects a {
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Footer CSS */
+.footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding-bottom: 40px;
+  text-align: center;
+}
