@@ -131,11 +131,11 @@ h4 {
 /* Hero Section CSS */
 .hero {
   background-color: #333;
-  color: red;
+  color: orange;
   font-size: 45px;
   height: 100vh;
   width: 100%;
-  padding-top: 60vw;
+  padding: 60vw 10px 90px;
 }
 
 .hero-text-wrapper {
