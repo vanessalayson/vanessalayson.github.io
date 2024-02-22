@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Vanessa Layson Portfolio</title>
   </head>
   <body>
+
     <!-- Responsive Sticky Navbar -->
     <nav class="navbar" id="navbar">
       <div class="navbar-container">
         <a href="#" class="logo">VL</a>
         <div class="navbar-links" id="navbar-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Me</a>
-          <a href="#projects">My Projects</a>
+          <a href="#home" class="nav-link" data-modal-target="#myModal">Home</a>
+          <a href="#about" class="nav-link" data-modal-target="#myModal">About Me</a>
+          <a href="#projects" class="nav-link" data-modal-target="#myModal">My Projects</a>
         </div>
         <div class="menu-toggle" id="menu-toggle">
           <div class="bar"></div>
@@ -24,6 +28,14 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hamburger Menu Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <p>Modal content goes here.</p>
+      </div>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -34,7 +46,6 @@
           I'm a Web Developer.
         </h1>
       </div>
-      
     </section>
 
     <!-- About Me Section -->
@@ -57,21 +68,29 @@
       <div class="card-wrapper">
         <!-- FOOD -->
         <div class="card">
-            <img src="img/food.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4>FOOD</h4>
-                <a href="https://html-css-js-1-food.vercel.app/"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/html-css-js-1-food"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/food.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4>FOOD</h4>
+            <a href="https://html-css-js-1-food.vercel.app/"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a href="https://github.com/vanessalayson/html-css-js-1-food"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
         <!-- TRAVEL -->
         <div class="card">
-            <img src="img/travel.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4>TRAVEL</h4>
-                <a href="https://html-css-js-2-travel.vercel.app/"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/html-css-js-2-travel"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/travel.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4>TRAVEL</h4>
+            <a href="https://html-css-js-2-travel.vercel.app/"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a href="https://github.com/vanessalayson/html-css-js-2-travel"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
       </div>
 
@@ -80,30 +99,42 @@
       <div class="card-wrapper">
         <!-- SLIDER -->
         <div class="card">
-            <img src="img/slider.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4>SLIDER</h4>
-                <a href="https://js-1-image-slider.vercel.app"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/js-1-image-slider"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/slider.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4>SLIDER</h4>
+            <a href="https://js-1-image-slider.vercel.app"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a href="https://github.com/vanessalayson/js-1-image-slider"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
         <!-- LOREM -->
         <div class="card">
-            <img src="img/lorem.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4>LOREM</h4>
-                <a href="https://js-2-lorem-ipsum.vercel.app"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/js-2-lorem-ipsum"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/lorem.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4>LOREM</h4>
+            <a href="https://js-2-lorem-ipsum.vercel.app"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a href="https://github.com/vanessalayson/js-2-lorem-ipsum"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
         <!-- CAROUSEL -->
         <div class="card">
-            <img src="img/carousel.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4>CAROUSEL</h4>
-                <a href="https://js-3-review-carousel.vercel.app"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/js-3-review-carousel"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/carousel.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4>CAROUSEL</h4>
+            <a href="https://js-3-review-carousel.vercel.app"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a href="https://github.com/vanessalayson/js-3-review-carousel"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
       </div>
 
@@ -112,30 +143,52 @@
       <div class="card-wrapper">
         <!-- PORTFOLIO -->
         <div class="card">
-            <img src="img/jane-doe.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4 class="custom-1">PORTFOLIO (SCSS)</h4>
-                <a href="https://scss-1-jane-doe.vercel.app/index.html" class="custom-2"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/scss-1-jane-doe" class="custom-2"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/jane-doe.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4 class="custom-1">PORTFOLIO (SCSS)</h4>
+            <a
+              href="https://scss-1-jane-doe.vercel.app/index.html"
+              class="custom-2"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a
+              href="https://github.com/vanessalayson/scss-1-jane-doe"
+              class="custom-2"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
         <!-- BOOTCAMP -->
         <div class="card">
-            <img src="img/bootcamp.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4 class="custom-2">BOOTCAMP (BOOTSTRAP)</h4>
-                <a href="https://bootstrap-1-bootcamp.vercel.app/" class="custom-2"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/bootstrap-1-bootcamp" class="custom-2"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/bootcamp.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4 class="custom-2">BOOTCAMP (BOOTSTRAP)</h4>
+            <a href="https://bootstrap-1-bootcamp.vercel.app/" class="custom-2"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a
+              href="https://github.com/vanessalayson/bootstrap-1-bootcamp"
+              class="custom-2"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
         <!-- MANAGE -->
         <div class="card">
-            <img src="img/manage.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4 class="custom-1">MANAGE (TAILWIND)</h4>
-                <a href="https://vanessalayson.github.io/tailwind-1-manage/" class="custom-2"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/tailwind-1-manage" class="custom-2"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/manage.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4 class="custom-1">MANAGE (TAILWIND)</h4>
+            <a
+              href="https://vanessalayson.github.io/tailwind-1-manage/"
+              class="custom-2"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a
+              href="https://github.com/vanessalayson/tailwind-1-manage"
+              class="custom-2"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
       </div>
 
@@ -144,19 +197,27 @@
       <div class="card-wrapper">
         <!-- ANIMATED PORTFOLIO -->
         <div class="card">
-            <img src="img/animated-portfolio.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4 class="custom-1">ANIMATED PORTFOLIO</h4>
-                <a href="https://react-1-animated-portfolio.vercel.app/" class="custom-2"><i class="fa-solid fa-eye"></i>Preview</a>
-                <a href="https://github.com/vanessalayson/react-1-animated-portfolio" class="custom-2"><i class="fa-solid fa-code"></i>Code</a>
-            </div>
+          <img src="img/animated-portfolio.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4 class="custom-1">ANIMATED PORTFOLIO</h4>
+            <a
+              href="https://react-1-animated-portfolio.vercel.app/"
+              class="custom-2"
+              ><i class="fa-solid fa-eye"></i>&nbsp;Preview</a
+            >
+            <a
+              href="https://github.com/vanessalayson/react-1-animated-portfolio"
+              class="custom-2"
+              ><i class="fa-solid fa-code"></i>&nbsp;Code</a
+            >
+          </div>
         </div>
         <!-- TRAVEL -->
         <div class="card">
-            <img src="img/under-construction.png" alt="food" class="projImg">
-            <div class="text-wrapper">
-                <h4>COMING SOON</h4>
-            </div>
+          <img src="img/under-construction.png" alt="food" class="projImg" />
+          <div class="text-wrapper">
+            <h4>COMING SOON</h4>
+          </div>
         </div>
       </div>
     </section>
@@ -165,6 +226,5 @@
     <footer class="footer">&copy; Vanessa Layson</footer>
 
     <script src="script.js"></script>
-
   </body>
 </html>
