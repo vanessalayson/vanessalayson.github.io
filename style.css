@@ -15,13 +15,12 @@ h2 {
 }
 
 h3 {
-    color: #fff;
-    padding-top: 40px;
-
+  color: #fff;
+  padding-top: 40px;
 }
 
 h4 {
-    color: #fff;
+  color: #fff;
 }
 
 /* Navbar CSS */
@@ -132,12 +131,17 @@ h4 {
 /* Hero Section CSS */
 .hero {
   background-color: #333;
-  color: #fff;
+  color: red;
   font-size: 45px;
   height: 100vh;
   width: 100%;
   padding-top: 60vw;
-  padding-left: 5vw;
+}
+
+.hero-text-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #myName {
@@ -174,40 +178,40 @@ h4 {
 }
 
 .card-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .projImg {
-    width: 80vw;
+  width: 80vw;
 }
 
 .text-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5px;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5px;
+  align-items: center;
 }
 
 .custom-1 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .custom-2 {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .my-projects a {
-    text-decoration: none;
-    color: #333;
-    background-color: #ddd;
-    border-radius: 5px;
-    padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 /* Footer CSS */
