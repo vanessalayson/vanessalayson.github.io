@@ -1,8 +1,10 @@
-/* Default CSS */
+/* Default & Global CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -131,8 +133,10 @@ h4 {
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #c7c8cc;
     z-index: 999;
+    width: 80vw;
+    margin: 0 10vw;
   }
 
   .navbar-links a {
@@ -202,7 +206,6 @@ h4 {
 /* Projects Section CSS */
 .my-projects {
   background-color: #333;
-  height: auto;
   width: 100%;
   padding: 80px 10px 90px;
 }
@@ -245,6 +248,10 @@ h4 {
   padding: 5px 10px;
 }
 
+.my-projects a {
+  overflow-y: hidden;
+}
+
 /* Footer CSS */
 .footer {
   background-color: #333;
@@ -252,4 +259,246 @@ h4 {
   width: 100%;
   padding-bottom: 40px;
   text-align: center;
+}
+
+/* ---------------------------RESPONSIVENESS-------------------------- */
+
+/* For Tablet ---------------------------------------- */
+@media (min-width: 425px) {
+  /* .hero {
+    color: red;
+  } */
+
+  /* GLOBAL */
+  h2 {
+    font-size: 50px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+
+  h3 {
+    padding-top: 40px;
+    padding-left: 20px;
+    font-size: 36px;
+  }
+
+  /* Navbar */
+
+  .logo {
+    font-size: 40px;
+    padding-left: 20px;
+  }
+
+  .bar {
+    width: 40px;
+  }
+
+  .menu-toggle {
+    padding-right: 20px;
+  }
+
+  a.nav-link {
+    font-size: 15px;
+  }
+
+  /* HERO */
+  .hero {
+    font-size: 70px;
+    height: 100vh;
+    width: 100%;
+    padding: 30vh 40px 20vh;
+  }
+
+  /* ABOUT ME */
+  .about-me {
+    height: 50vh;
+    padding: 100px 10px 90px;
+  }
+
+  .about-me p {
+    font-size: 28px;
+    line-height: 50px;
+    padding: 40px 20px 10px;
+  }
+
+  /* PROJECTS */
+  .my-projects {
+    padding: 80px 10px 90px;
+  }
+
+  .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+  }
+
+  .card {
+    padding-top: 40px;
+  }
+
+  .projImg {
+    width: 40vw;
+  }
+
+  .text-wrapper {
+    padding-top: 20px;
+  }
+
+  .my-projects a {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}
+
+/* For Laptop ---------------------------------------- */
+@media (min-width: 769px) {
+  /* .hero {
+    color: blue;
+  } */
+
+  /* GLOBAL */
+  h2 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 48px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  /* Navbar */
+
+  a.nav-link {
+    font-size: 36px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 35vh 100px 20vh;
+  }
+
+  /* ABOUT ME */
+  .about-me {
+    height: 70vh;
+    padding: 100px 100px 90px;
+  }
+
+  .about-me p {
+    font-size: 36px;
+    line-height: 60px;
+  }
+
+  /* PROJECTS */
+  .my-projects {
+    padding: 80px 100px 90px;
+  }
+
+  .card-wrapper {
+    padding-bottom: 50px;
+  }
+
+  .card {
+    padding-top: 40px;
+  }
+
+  .projImg {
+    width: 35vw;
+  }
+
+  .text-wrapper {
+    padding-top: 20px;
+  }
+
+  .my-projects a {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  .custom-1 {
+    font-size: 16px;
+  }
+
+  .custom-2 {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 28px;
+  }
+}
+
+/* For Laptop L -------------------------------------- */
+@media (min-width: 1025px) {
+  /* .hero {
+    color: green;
+  } */
+
+  /* GLOBAL */
+  h2 {
+    font-size: 90px;
+  }
+
+  h3 {
+    font-size: 64px;
+  }
+
+  h4 {
+    font-size: 32px;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    padding-top: 50px;
+  }
+
+  .logo {
+    font-size: 80px;
+    padding-left: 20px;
+  }
+
+  a.nav-link {
+    font-size: 48px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 40vh 100px 20vh;
+  }
+
+  /* ABOUT ME */
+  .about-me {
+    height: 100vh;
+    padding: 170px 100px 120px;
+  }
+
+  .about-me p {
+    font-size: 52px;
+    line-height: 85px;
+  }
+
+  /* PROJECTS */
+  .my-projects {
+    padding: 170px 100px 90px;
+  }
+
+  .my-projects a {
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  .custom-1 {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 36px;
+  }
 }
