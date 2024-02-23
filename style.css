@@ -139,7 +139,17 @@ h4 {
     margin: 0 10vw;
   }
 
-  .navbar-links a {
+  .navbar-links a:nth-child(1) {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+
+  .navbar-links a:nth-child(2) {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+
+  .navbar-links a:nth-child(3) {
     padding: 10px;
     border-bottom: 1px solid #666;
   }
@@ -252,12 +262,26 @@ h4 {
   overflow-y: hidden;
 }
 
+.my-cv {
+  width: 100%;
+  background-color: #333;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-cv a {
+  color: #fff;
+}
+
 /* Footer CSS */
 .footer {
   background-color: #333;
   color: #fff;
   width: 100%;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -374,7 +398,7 @@ h4 {
   /* Navbar */
 
   a.nav-link {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   /* HERO */
@@ -427,9 +451,18 @@ h4 {
     font-size: 14px;
   }
 
+  /* CV & CERTIFICATIONS */
+  .my-cv {
+    padding: 200px 0;
+  }
+  .my-cv a {
+    font-size: 28px;
+  }
+
   /* Footer */
   .footer {
     font-size: 28px;
+    padding-bottom: 80px;
   }
 }
 
@@ -464,7 +497,7 @@ h4 {
   }
 
   a.nav-link {
-    font-size: 48px;
+    font-size: 32px;
   }
 
   /* HERO */
@@ -497,8 +530,18 @@ h4 {
     font-size: 18px;
   }
 
+  /* CV & CERTIFICATIONS */
+  .my-cv {
+    padding: 200px 0;
+  }
+
+  .my-cv a {
+    font-size: 36px;
+  }
+
   /* Footer */
   .footer {
+    padding-bottom: 80px;
     font-size: 36px;
   }
 }
