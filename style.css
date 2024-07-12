@@ -325,8 +325,7 @@ h4 {
 
   /* ABOUT ME */
   .about-me {
-    height: 100vh;
-    padding: 100px 10px 90px;
+    padding: 50px 10px 0px;
   }
 
   .about-me p {
@@ -400,8 +399,7 @@ h4 {
 
   /* ABOUT ME */
   .about-me {
-    height: 100vh;
-    padding: 100px 100px 90px;
+    padding: 100px 100px 0px;
   }
 
   .about-me p {
@@ -501,8 +499,7 @@ h4 {
 
   /* ABOUT ME */
   .about-me {
-    height: 100vh;
-    padding: 170px 100px 120px;
+    padding: 170px 100px 0px;
   }
 
   .about-me p {
@@ -512,7 +509,7 @@ h4 {
 
   /* PROJECTS */
   .my-projects {
-    padding: 170px 100px 90px;
+    padding: 100px 100px 90px;
   }
 
   .my-projects a {
