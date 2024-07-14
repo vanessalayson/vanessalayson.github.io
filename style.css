@@ -258,13 +258,11 @@ h4 {
   overflow-y: hidden;
 }
 
+/* Credentials Section CSS */
 .my-cv {
   width: 100%;
   background-color: #333;
-  padding-top: 20px;
-  padding-bottom: 100px;
-  display: flex;
-  justify-content: space-around;
+  padding: 20px 10px 100px;
 }
 
 .my-cv a {
@@ -443,9 +441,9 @@ h4 {
     font-size: 14px;
   }
 
-  /* CV & CERTIFICATIONS */
+  /* CREDENTIALS */
   .my-cv {
-    padding: 200px 0;
+    padding: 100px 100px 0px;
   }
   .my-cv a {
     font-size: 28px;
@@ -523,9 +521,9 @@ h4 {
     font-size: 18px;
   }
 
-  /* CV & CERTIFICATIONS */
+  /* CREDENTIALS */
   .my-cv {
-    padding: 200px 0;
+    padding: 100px 100px 0px;
   }
 
   .my-cv a {
