@@ -452,7 +452,7 @@ h4 {
   /* Footer */
   .footer {
     font-size: 28px;
-    padding-bottom: 80px;
+    padding: 200px 0 80px;
   }
 }
 
